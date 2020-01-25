@@ -3,6 +3,7 @@
     margin-bottom: 20px;
     /* background-color:rgba(0, 0, 0, 0.05); */
     width: 21%;
+    font-family: 'Caesar Dressing';
 }
 .headers{
     margin: 10px;
@@ -37,13 +38,14 @@ tbody {
     vertical-align: middle;
     border-color: inherit;
 }
+input[type='submit'], /* to hide password*/
 label{
     width: 10%;
 }
 .infield{
     margin: 2%;
 }
-.button{
+/*.button{
     border: 1px solid #90C2FC;
     background-color: black;
     width: 10%;
@@ -51,4 +53,13 @@ label{
     font-size: 20px;
     margin-bottom: 5%;
 
+}*/
+
+body{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+h5{
+    color: DarkSlateGrey;
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
