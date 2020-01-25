@@ -1,0 +1,90 @@
+<div style="background-color:rgba(0, 0, 0, 0.05);">
+  <div>
+    <h1 class='title' (click) = "BackToHome()">Sparsh Books</h1>
+  </div>
+  <table style="width: 80%;
+  border-collapse: collapse;
+  background-color: white;
+  color: black;
+  margin-left: 10%;" rules="value">
+      <thead>
+        <tr>
+          <th class='id'>School ID</th>
+          <th class='name'>School Name</th>
+          <th class='district'>District</th>
+          <th class='state'>State</th>
+          <th class='address'>Address</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of Data">
+          <td style="border: 1px solid black;">{{ employee.school_id }}</td>
+          <td style="border: 1px solid black;">{{ employee.school_name }}</td>
+          <td style="border: 1px solid black;">{{ employee.district }}</td>
+          <td style="border: 1px solid black;">{{ employee.state }}</td>
+          <td style="border: 1px solid black;">{{ employee.address }}</td>
+        </tr>
+      </tbody>
+  </table>
+  <p style="    border: 1px solid #90C2FC;
+  background-color: black;
+  width: 26%;
+  color: #90C2FC;
+  font-size: 20px;
+  margin-left: 10%;text-align: center;">Add new School From Here
+  </p>
+
+  <!-- <form (ngSubmit)="insertSchool()">
+      School Name :<br/> <input type="text" ng-model="schoolName">
+      <br/>
+      District :<br/> <input type="text" ng-model="district">
+      <br/>
+      state :<br/> <input type="text" ng-model="state">
+      <br/>
+      Address :<br/> <input type="text" ng-model="Address">
+      <br/><br/>
+    <button style="border: 1px solid black;
+      background-color: black;
+      /* width: 20%; */
+      color: #90C2FC;
+      width: 15%;
+      font-size: 20px;" ng-click = "insertSchool()">Add School
+    </button>
+  </form> -->
+  <form [formGroup]="checkoutForm" (ngSubmit)="insertSchool(checkoutForm.value)" style="margin-left: 10%;">
+      <div class='infield'>
+        <label for="name">
+          Name : 
+        </label>
+        <input id="name" type="text" formControlName="school_name" style="margin-left: 1%;">
+      </div>
+      
+        <div class='infield'>
+          <label for="address">
+            Address : 
+          </label>
+          <input id="address" type="text" formControlName="address">
+        </div>
+
+        <div class='infield'>
+            <label for="district">
+              District : 
+            </label>
+            <input id="district" type="text" formControlName="district" style="margin-left: 0.4%;">
+        </div>
+        
+        <div class='infield'>
+          <label for="state">
+            State :
+          </label>
+          <input id="state" type="text" formControlName="state" style="margin-left: 1.7%;">
+        </div>
+      <br/>
+      <button class="button" type="submit">Add</button>
+  </form>
+</div>
+
+  
+
+

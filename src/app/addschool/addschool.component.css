@@ -1,0 +1,54 @@
+.title{
+    margin-left: 40%;
+    margin-bottom: 20px;
+    /* background-color:rgba(0, 0, 0, 0.05); */
+    width: 21%;
+}
+.headers{
+    margin: 10px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #000;
+  }
+
+th.id {
+    width: 10%;
+    text-align: left;
+    font-size: 16px;
+    border: 1px solid black;
+}
+th.state, th.district {
+    width: 15%;
+    text-align: left;
+    font-size: 16px;
+    border: 1px solid black;
+}
+th.address, th.name {
+    width: 30%; /* Not necessary, since only 70% width remains */
+    text-align: left;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+label{
+    width: 10%;
+}
+.infield{
+    margin: 2%;
+}
+.button{
+    border: 1px solid #90C2FC;
+    background-color: black;
+    width: 10%;
+    color: #90C2FC;
+    font-size: 20px;
+    margin-bottom: 5%;
+
+}
