@@ -3,53 +3,59 @@
       <h1 class='title'>Sparsh Books</h1>
     </div>
     <div>
-      <span (click)="togglesignup()" style="    border: 1px solid #90C2FC;
+      <!-- <span (click)="togglesignup()" style="    border: 1px solid #90C2FC;
       background-color: black;
       width: 26%;
       color: #90C2FC;
       font-size: 20px;
       margin-left: 10%;text-align: center;">Sign up
-      </span>
-      <span (click)="togglelogin()" style="    border: 1px solid #90C2FC;
+      </span> -->
+      &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+       &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
+      <a (click)="togglesignup()" class="btn btn-info" role="button">Sign Up</a>
+      <!-- <span (click)="togglelogin()" style="    border: 1px solid #90C2FC;
       background-color: black;
       width: 26%;
       color: #90C2FC;
       font-size: 20px;
       margin-left: 10%;text-align: center;">Login
-      </span>
+      </span> -->
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <a (click)="togglelogin()" class="btn btn-info" role="button">Sign In</a>
     </div>
     <div *ngIf="signup;">
     <!-- <div> -->
       <form [formGroup]="signupform" (ngSubmit)="signUp(signupform.value)" style="margin-left: 10%;">
           <div class='infield'>
             <label for="name">
-              Name : 
+              <h5>Name:</h5> 
             </label>
-            <input id="name" type="text" formControlName="name" style="margin-left: 1%;">
+            <input id="name" type="text" formControlName="name">
           </div>
           
             <div class='infield'>
               <label for="address">
-                Address : 
+                <h5>Address:</h5> 
               </label>
               <input id="address" type="text" formControlName="phone">
             </div>
     
             <div class='infield'>
                 <label for="district">
-                  District : 
+                  <h5>District:</h5> 
                 </label>
-                <input id="district" type="text" formControlName="email" style="margin-left: 0.4%;">
+                <input id="district" type="text" formControlName="email">
             </div>
             
             <div class='infield'>
               <label for="state">
-                State :
+                <h5>State:</h5>
               </label>
-              <input id="state" type="text" formControlName="password" style="margin-left: 1.7%;">
+              <input id="state" type="text" formControlName="password">
             </div>
           <br/>
-          <button class="button" type="submit">Add</button>
+          <!-- <button class="button" type="submit">Add</button> -->
+          <a href="#" class="btn btn-info" role="button">Add</a>
       </form>
     </div>
 
@@ -58,18 +64,22 @@
       <form [formGroup]="loginform" (ngSubmit)="signUp(loginform.value)" style="margin-left: 10%;">
         <div class='infield'>
           <label for="name">
-            Email Or Phone : 
+            <h5>Email Or Phone:</h5>
           </label>
-          <input id="name" type="text" formControlName="email" style="margin-left: 1%;">
+          <input id="name" type="text" formControlName="email">
         </div>
         
           <div class='infield'>
             <label for="address">
-              Password : 
+              <h5>Password:</h5>
             </label>
-            <input id="name" type="text" formControlName="password" style="margin-left: 1%;">
+            <input id="name" type="password" formControlName="password" >
+
+            <!-- <input id = "name" type="password" id="pass" name="password" minlength="8" required style = "margin-left: 1%";> -->
           </div>
-        <button class="button" type="submit">Add</button>
+          &nbsp; &nbsp;
+       <a href="#" class="btn btn-info" role="button">Add</a>
+       <!-- <button class="button" type="submit">Add</button> -->
       </form>
     </div>
   </div>
