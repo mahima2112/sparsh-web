@@ -3,16 +3,19 @@
     margin-bottom: 20px;
     /* background-color:rgba(0, 0, 0, 0.05); */
     width: 21%;
+    font-family: 'Caesar Dressing';
 }
 .headers{
     margin: 10px;
 }
 
 table {
-    width: 100%;
+    width: 80%;
     border: 1px solid #000;
+    align-self: center;
+    margin-left: 10%;
   }
-
+/*
 th.id {
     width: 10%;
     text-align: left;
@@ -27,7 +30,7 @@ th.state, th.district {
 }
 th.address, th.name {
     width: 30%; /* Not necessary, since only 70% width remains */
-    text-align: left;
+    /*text-align: left;
     font-size: 16px;
     border: 1px solid black;
 }
@@ -36,7 +39,33 @@ tbody {
     display: table-row-group;
     vertical-align: middle;
     border-color: inherit;
+}*/
+
+
+#school {
+  /*font-family: "Caesar Dressing";*/
+  border-collapse: collapse;
+  width: 74%;
 }
+
+#school td, #school th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#school tr:nth-child(even){background-color: #f2f2f2;}
+
+#school tr:hover {background-color: #ddd;}
+
+#school th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #33B8CD;
+  color: white;
+  width: 10%
+}
+
 label{
     width: 10%;
 }
@@ -51,4 +80,12 @@ label{
     font-size: 20px;
     margin-bottom: 5%;
 
+}
+body{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+h5{
+    color: DarkSlateGrey;
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
