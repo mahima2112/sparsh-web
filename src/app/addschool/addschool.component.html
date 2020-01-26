@@ -2,12 +2,14 @@
   <div>
     <h1 class='title' (click) = "BackToHome()">Sparsh Books</h1>
   </div>
-  <table style="width: 80%;
+  <!-- <table style="width: 80%;
   border-collapse: collapse;
   background-color: white;
   color: black;
-  margin-left: 10%;" rules="value">
-      <thead>
+  margin-left: 10%;" rules="value"> -->
+  <table id = "school">
+  <div class="table-responsive">     
+      <!-- <thead> -->
         <tr>
           <th class='id'>School ID</th>
           <th class='name'>School Name</th>
@@ -16,8 +18,8 @@
           <th class='address'>Address</th>
           
         </tr>
-      </thead>
-      <tbody>
+      <!-- </thead> -->
+     <!--  <tbody> -->
         <tr *ngFor="let employee of Data">
           <td style="border: 1px solid black;">{{ employee.school_id }}</td>
           <td style="border: 1px solid black;">{{ employee.school_name }}</td>
@@ -25,15 +27,19 @@
           <td style="border: 1px solid black;">{{ employee.state }}</td>
           <td style="border: 1px solid black;">{{ employee.address }}</td>
         </tr>
-      </tbody>
-  </table>
-  <p style="    border: 1px solid #90C2FC;
+      <!-- </tbody> -->
+  </div>
+</table>
+  <!-- <p style="    border: 1px solid #90C2FC;
   background-color: black;
   width: 26%;
   color: #90C2FC;
   font-size: 20px;
   margin-left: 10%;text-align: center;">Add new School From Here
-  </p>
+  </p> -->
+  <br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+<a href="#" class="btn btn-info" role="button">Add</a>
 
   <!-- <form (ngSubmit)="insertSchool()">
       School Name :<br/> <input type="text" ng-model="schoolName">
@@ -55,33 +61,34 @@
   <form [formGroup]="checkoutForm" (ngSubmit)="insertSchool(checkoutForm.value)" style="margin-left: 10%;">
       <div class='infield'>
         <label for="name">
-          Name : 
+          <h5>Name:</h5> 
         </label>
-        <input id="name" type="text" formControlName="school_name" style="margin-left: 1%;">
+        <input id="name" type="text" formControlName="school_name" >
       </div>
       
         <div class='infield'>
           <label for="address">
-            Address : 
+            <h5>Address:</h5> 
           </label>
           <input id="address" type="text" formControlName="address">
         </div>
 
         <div class='infield'>
             <label for="district">
-              District : 
+              <h5>District:</h5> 
             </label>
-            <input id="district" type="text" formControlName="district" style="margin-left: 0.4%;">
+            <input id="district" type="text" formControlName="district" >
         </div>
         
         <div class='infield'>
           <label for="state">
-            State :
+            <h5>State:</h5>
           </label>
-          <input id="state" type="text" formControlName="state" style="margin-left: 1.7%;">
+          <input id="state" type="text" formControlName="state">
         </div>
       <br/>
-      <button class="button" type="submit">Add</button>
+      <!-- <button class="button" type="submit">Add</button> -->
+      <a href="#" class="btn btn-info" role="button">Add</a>
   </form>
 </div>
 
