@@ -12,8 +12,8 @@
       margin-left: 10%;text-align: center;">Sign up
       </span> -->
       &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-       &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
-       <button class="button"><span>Sign Up </span></button>
+       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+       <button class="button"><span><b>Sign Up </b></span></button>
       <!-- <a (click)="togglesignup()" class="btn btn-success" role="button">Sign Up</a> -->
       <!-- <span (click)="togglelogin()" style="    border: 1px solid #90C2FC;
       background-color: black;
@@ -22,9 +22,9 @@
       font-size: 20px;
       margin-left: 10%;text-align: center;">Login
       </span> -->
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; 
       <!-- <a (click)="togglelogin()" class="btn btn-success" role="button">Sign In</a> -->
-      <button class="button"><span>Sign In </span></button>
+      <button class="button"><span><b>Sign In </b></span></button>
     </div>
     <div *ngIf="signup;">
     <!-- <div> -->
@@ -70,21 +70,21 @@
           <label for="name">
             <h5>Email Or Phone:</h5>
           </label>
-          <input id="name" type="text" formControlName="email">
+          <input id="name" type="text" formControlName="email" style="margin-left: 5%;">
         </div>
         
           <div class='infield'>
             <label for="address">
               <h5>Password:</h5>
             </label>
-            <input id="name" type="password" formControlName="password" >
+            <input id="name" type="password" formControlName="password" style="margin-left: 5%;">
 
             <!-- <input id = "name" type="password" id="pass" name="password" minlength="8" required style = "margin-left: 1%";> -->
           </div>
           &nbsp; &nbsp;
        <!-- <button class="btn btn-success" type="submit">Add</button> -->
        <!-- <button class="button" type="submit">Add</button> -->
-       <button class="button"><span>Add</span></button>
+       <button class="button"><span><b>Add</b></span></button>
       </form>
     </div>
   </div>

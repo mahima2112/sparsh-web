@@ -2,8 +2,8 @@
 <div class='functionalities'>
   <!-- <span class='enter' (click)="AddSchool()">Add School</span> -->
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <button class="button"><span>Add School</span></button>
-  <button class="button"><span>Enter Item </span></button>
+  <button class="button"><span><b>Add School</b></span></button>
+  <button class="button"><span><b>Enter Item </b></span></button>
   <!-- <span class='enter' (click)="AddClass()">Add Class</span> -->
   <!-- <span class='enter' (click)="AddItem()">Enter Item</span> -->
   <!-- <span class='enter' (click)="AddItem()">Enter Order</span> -->
@@ -27,42 +27,44 @@
       <td>{{ employee.item_type }}</td>
       <td>{{ employee.available_stock }}</td>
       <td>{{ employee.tobeordered }}</td>
+      
     </tr>
+
   </tbody>
 </div>
 </table>
 <br><br>
-<h3 style="color:white"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;ADD NEW ORDER</h3>
+<h3 style="color:white"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;ADD NEW ORDER:</h3>
 
 <form [formGroup]="checkoutForm" (ngSubmit)="insertSchool(checkoutForm.value)" style="margin-left: 10%;">
       <div class='infield'>
         <label for="name">
           <h5>Name:</h5> 
         </label>
-        <input id="name" type="text" formControlName="school_name" style="margin-left: 2.5%;">
+        <input id="name" type="text" formControlName="school_name" style="margin-left: 6.5%;">
       </div>
       
         <div class='infield'>
           <label for="address">
             <h5>Address:</h5> 
           </label>
-          <input id="address" type="text" formControlName="address" style="margin-left: 1.3%;">
+          <input id="address" type="text" formControlName="address" style="margin-left: 5.3%;">
         </div>
 
         <div class='infield'>
             <label for="district">
               <h5>District:</h5> 
             </label>
-            <input id="district" type="text" formControlName="district" style="margin-left: 2%;">
+            <input id="district" type="text" formControlName="district" style="margin-left: 6.1%;">
         </div>
         
         <div class='infield'>
           <label for="state">
             <h5>State:</h5>
           </label>
-          <input id="state" type="text" formControlName="state" style="margin-left: 2.8%;">
+          <input id="state" type="text" formControlName="state" style="margin-left: 7%;">
         </div>
       <br/>
-      <button class="button"><span>Enter Item </span></button>
+      <button class="button"><span><b>Enter Item </b></span></button>
       <!-- <a href="#" class="btn btn-info" role="button">Add</a> -->
   </form>
