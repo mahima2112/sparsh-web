@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
@@ -10,6 +11,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddclassComponent } from './addclass/addclass.component';
 import { AdditemComponent } from './additem/additem.component';
 import { SignupComponent } from './signup/signup.component';
+import { SchoolComponent } from './school/school.component';
+import { MatMenuModule} from '@angular/material';
 
 const appRoutes: Routes = [
   // { path: 'home', component: HomeComponent2, data: { breadcrumb: 'Home' } },
@@ -34,13 +37,16 @@ const appRoutes: Routes = [
     AddschoolComponent,
     AddclassComponent,
     AdditemComponent,
-    SignupComponent
+    SignupComponent,
+    SchoolComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatMenuModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false, useHash: false } // <-- debugging purposes only

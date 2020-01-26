@@ -1,4 +1,174 @@
 <h1 class='title'>Sparsh Books</h1>
-<p (click) = "BackToHome()">
+<h2 (click) = "BackToHome()">
   Home
-</p>
+</h2>
+
+<!-- <div class="row">
+  <div class="col">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem>Action - 1</button>
+        <button ngbDropdownItem>Another Action</button>
+        <button ngbDropdownItem>Something else is here</button>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="search_button button">
+    <button mat-button [matMenuTriggerFor]="menu2">{{typeofitem}}</button>
+    <mat-menu #menu2="matMenu">
+      <button mat-menu-item (click)="filterresult('Stationary')">Stationary</button>
+      <button mat-menu-item (click)="filterresult('NoteBook')">NoteBook</button>
+      <button mat-menu-item (click)="filterresult('Books')">Books</button>
+    </mat-menu>
+  </div>
+
+
+  
+
+<!-- <form [formGroup]="checkoutForm" (ngSubmit)="insertSchool(checkoutForm.value)" style="margin-left: 10%;">
+  <div class='infield'>
+    <label for="name">
+      <h5>Name:</h5> 
+    </label>
+    <input id="name" type="text" formControlName="school_name" >
+  </div>
+  
+    <div class='infield'>
+      <label for="address">
+        <h5>Address:</h5> 
+      </label>
+      <input id="address" type="text" formControlName="address">
+    </div>
+
+    <div class='infield'>
+        <label for="district">
+          <h5>District:</h5> 
+        </label>
+        <input id="district" type="text" formControlName="district" >
+    </div>
+    
+    <div class='infield'>
+      <label for="state">
+        <h5>State:</h5>
+      </label>
+      <input id="state" type="text" formControlName="state">
+    </div>
+  <br/>
+  <button class="btn btn-info" type="submit">Add</button>
+  <a href="#" class="btn btn-info" role="button">Add</a>
+</form> -->
+
+<table id = "items">
+  <div class="table-responsive">     
+      <!-- <thead> -->
+        <tr>
+          <th class='id'>Item ID</th>
+          <th class='name'>Item Name</th>
+          <th class='district'>Item Type</th>
+          <th class='state'>Available Stock</th>
+          <th class='address'>publisher</th>
+          
+        </tr>
+      <!-- </thead> -->
+     <!--  <tbody> -->
+        <tr *ngFor="let employee of filteredData">
+          <td style="border: 1px solid black;">{{ employee.item_id }}</td>
+          <td style="border: 1px solid black;">{{ employee.item_name }}</td>
+          <td style="border: 1px solid black;">{{ employee.item_type }}</td>
+          <td style="border: 1px solid black;">{{ employee.available_stock }}</td>
+          <td style="border: 1px solid black;">{{ employee.publisher }}</td>
+        </tr>
+      <!-- </tbody> -->
+  </div>
+</table>
+
+<div style="margin-top: 5%;">
+<span style="position: absolute; margin-top: 5%;width: 50%;">
+<div>Add New Item Here</div>
+
+<form [formGroup]="itemform" (ngSubmit)="insertItem(itemform.value)" style="margin-left: 10%;">
+  <div class='infield'>
+    <label for="item_name">
+      <h5>Item Name:</h5> 
+    </label>
+    <input id="item_name" type="text" formControlName="item_name" >
+  </div>
+  <!-- Convert it into a drop down -->
+    <div class='infield'> 
+      <label for="item_type">
+        <h5>Item Type:</h5> 
+      </label>
+      <!-- <input id="item_type" type="text" formControlName="item_type"> -->
+      <select class="custom-select" formControlName="item_type">
+        <option value="" disabled>Choose your type</option>
+        <option>STATIONARY</option>
+        <option>NOTEBOOK</option>
+        <option>BOOK</option>
+     </select>
+     <!-- <button mat-button [matMenuTriggerFor]="menu3" formControlName="item_type">{{typeofitem}}</button>
+      <mat-menu #menu3="matMenu" >
+        <button mat-menu-item>STATIONARY</button>
+        <button mat-menu-item>NOTEBOOK</button>
+        <button mat-menu-item>BOOK</button>
+      </mat-menu> -->
+    </div>
+    
+
+    <div class='infield' >
+        <label for="publisher">
+          <h5>publisher:</h5> 
+        </label>
+        <input id="publisher" type="text" formControlName="publisher" >
+    </div>
+  <button class="btn btn-info" type="submit">Add</button>
+  <!-- <a href="#" class="btn btn-info" role="button">Add</a> -->
+</form>
+</span>
+
+<span style="position: absolute;
+margin-top: 5%;
+margin-left: 40%;
+width: 50%;">
+<div>Update Item Here</div>
+
+<form [formGroup]="updateitemform" (ngSubmit)="insertItem(updateitemform.value)" style="margin-left: 10%;">
+  <div class='infield'>
+    <label for="item_name">
+      <h5>Item Name:</h5> 
+    </label>
+    <input id="item_name" type="text" formControlName="item_name" >
+  </div>
+  <!-- Convert it into a drop down -->
+    <div class='infield'> 
+      <label for="item_type">
+        <h5>Item Type:</h5> 
+      </label>
+      <!-- <input id="item_type" type="text" formControlName="item_type"> -->
+      <select class="custom-select" formControlName="item_type">
+        <option value="" disabled>Choose your type</option>
+        <option>STATIONARY</option>
+        <option>NOTEBOOK</option>
+        <option>BOOK</option>
+     </select>
+     <!-- <button mat-button [matMenuTriggerFor]="menu3" formControlName="item_type">{{typeofitem}}</button>
+      <mat-menu #menu3="matMenu" >
+        <button mat-menu-item>STATIONARY</button>
+        <button mat-menu-item>NOTEBOOK</button>
+        <button mat-menu-item>BOOK</button>
+      </mat-menu> -->
+    </div>
+    
+
+    <div class='infield' >
+        <label for="publisher">
+          <h5>publisher:</h5> 
+        </label>
+        <input id="publisher" type="text" formControlName="publisher" >
+    </div>
+  <button class="btn btn-info" type="submit">Add</button>
+  <!-- <a href="#" class="btn btn-info" role="button">Add</a> -->
+</form>
+</span>
+</div>

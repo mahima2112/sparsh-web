@@ -2,7 +2,7 @@
 <div class='functionalities'>
   <!-- <span class='enter' (click)="AddSchool()">Add School</span> -->
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <button class="button"><span>Add School</span></button>
+  <button class="button" (click)="AddSchool()"><span>Add School</span></button>
   <button class="button"><span>Enter Item </span></button>
   <!-- <span class='enter' (click)="AddClass()">Add Class</span> -->
   <!-- <span class='enter' (click)="AddItem()">Enter Item</span> -->
@@ -34,7 +34,7 @@
 <br><br>
 <h3 style="color:white"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;ADD NEW ORDER</h3>
 
-<form [formGroup]="checkoutForm" (ngSubmit)="insertSchool(checkoutForm.value)" style="margin-left: 10%;">
+<!-- <form [formGroup]="checkoutForm" (ngSubmit)="insertSchool(checkoutForm.value)" style="margin-left: 10%;">
       <div class='infield'>
         <label for="name">
           <h5>Name:</h5> 
@@ -64,5 +64,5 @@
         </div>
       <br/>
       <button class="button"><span>Enter Item </span></button>
-      <!-- <a href="#" class="btn btn-info" role="button">Add</a> -->
-  </form>
+       <a href="#" class="btn btn-info" role="button">Add</a> 
+  </form> -->
