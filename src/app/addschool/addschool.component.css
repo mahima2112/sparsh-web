@@ -5,6 +5,7 @@
     width: 21%;
     font-family: 'Caesar Dressing';
     color: white;
+    text-shadow: 1.2px 1.2px 1.2px coral;
 }
 .headers{
     margin: 10px;
@@ -12,7 +13,7 @@
 
 table {
     width: 80%;
-    border: 1px solid #000;
+    border: 1px solid yellow;
     align-self: center;
     margin-left: 10%;
   }
@@ -135,4 +136,7 @@ h3{
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+h3{
+  text-shadow: 1.2px 1.2px 1.2px coral;
 }

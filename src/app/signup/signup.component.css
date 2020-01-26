@@ -5,6 +5,7 @@
     width: 40%;
     font-family: 'Caesar Dressing';
     color: white;
+    text-shadow: 1.2px 1.2px 1.2px coral;
 }
 .headers{
     margin: 10px;
@@ -12,7 +13,8 @@
 
 table {
     width: 100%;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
+    border: 1px solid yellow;
   }
 
 th.id {
@@ -60,6 +62,9 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+h3{
+  text-shadow: 1.2px 1.2px 1.2px coral;
+}
 h5{
     color: #C8C8C8;
     text-shadow: 0.5px 0.5px 0.5px coral;
@@ -75,7 +80,7 @@ h5{
   width: 130px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 20px;
+  margin-left: 20px;
 }
 
 .button span {
