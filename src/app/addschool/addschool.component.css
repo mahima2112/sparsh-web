@@ -57,8 +57,9 @@ tbody {
 }
 
 #school tr:nth-child(even){background-color: #f2f2f2;}
+#school tr:nth-child(odd){background-color: #f2f2f2;}
 
-#school tr:hover {background-color: #ddd;}
+#school tr:hover {background-color: #ffffff;}
 
 #school th {
   padding-top: 12px;
