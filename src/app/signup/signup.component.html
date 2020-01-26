@@ -55,13 +55,13 @@
             </div>
           <br/>
           <!-- <button class="button" type="submit">Add</button> -->
-          <a href="#" class="btn btn-info" role="button">Add</a>
+          <button href="#" class="btn btn-info" type="submit">Add</button>
       </form>
     </div>
 
     <div *ngIf="login">
     <!-- <div> -->
-      <form [formGroup]="loginform" (ngSubmit)="signUp(loginform.value)" style="margin-left: 10%;">
+      <form [formGroup]="loginform" (ngSubmit)="logIn(loginform.value)" style="margin-left: 10%;">
         <div class='infield'>
           <label for="name">
             <h5>Email Or Phone:</h5>
@@ -78,7 +78,7 @@
             <!-- <input id = "name" type="password" id="pass" name="password" minlength="8" required style = "margin-left: 1%";> -->
           </div>
           &nbsp; &nbsp;
-       <a href="#" class="btn btn-info" role="button">Add</a>
+       <button class="btn btn-info" type="submit">Add</button>
        <!-- <button class="button" type="submit">Add</button> -->
       </form>
     </div>

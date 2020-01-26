@@ -79,4 +79,14 @@ export class SignupComponent implements OnInit {
     })
   }
 
+  buttonselect(data){
+    console.log(data)
+    if(this.signup == true){
+      this.signUp(data);
+    }
+    else{
+      this.logIn(data);
+    }
+  }
+
 }

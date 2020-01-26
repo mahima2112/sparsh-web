@@ -43,7 +43,7 @@ export class AddschoolComponent implements OnInit {
   }
 
   BackToHome(){
-    let url = '/'
+    let url = '/home'
     this.router.navigateByUrl(url);
   }
   insertSchool(data){
