@@ -1,9 +1,10 @@
 .title{
     margin-left: 40%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     /* background-color:rgba(0, 0, 0, 0.05); */
-    width: 21%;
+    width: 40%;
     font-family: 'Caesar Dressing';
+    color: white;
 }
 .headers{
     margin: 10px;
@@ -60,6 +61,44 @@ body{
     background-size: 100% 100%;
 }
 h5{
-    color: DarkSlateGrey;
-    text-shadow: 0.5px 0.5px 0.5px black;
+    color: #C8C8C8;
+    text-shadow: 0.5px 0.5px 0.5px coral;
+}
+.button {
+  border-radius: 4px;
+  background-color:#B0E0E6;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }

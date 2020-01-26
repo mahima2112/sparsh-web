@@ -3,6 +3,10 @@
 }
 .title{
     margin-left: 40%;
+    margin-bottom: 20px;
+    /* background-color:rgba(0, 0, 0, 0.05); */
+    width: 21%;
+    font-family: 'Caesar Dressing';
 }
 
 .functionalities{
@@ -10,3 +14,74 @@
     margin-bottom: 20px;
 }
 
+.button {
+  border-radius: 4px;
+  background-color:#B0E0E6;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+h3{
+  font-family: 'Caesar Dressing';
+}
+h5{
+    color: #C8C8C8;
+    text-shadow: 0.5px 0.5px 0.5px coral;
+}
+#home {
+  /*font-family: "Caesar Dressing";*/
+  border-collapse: collapse;
+  width: 74%;
+  margin-left: 14%;
+}
+
+#home td, #home th {
+  border: 1px solid #000000;
+  padding: 8px;
+  color: black;
+}
+
+#home tr:nth-child(even){background-color: #f2f2f2;}
+
+#home tr:hover {background-color: #ddd;}
+
+#home th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #B0E0E6;
+  color: black;
+  width: 10%;
+  
+}
