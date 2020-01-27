@@ -56,8 +56,8 @@ tbody {
   padding: 8px;
 }
 
-#school tr:nth-child(even){background-color: #f2f2f2;}
-#school tr:nth-child(odd){background-color: #f2f2f2;}
+#school tr:nth-child(even){background-color: #C6E2FF;}
+#school tr:nth-child(odd){background-color: #C6E2FF;}
 
 #school tr:hover {background-color: #ffffff;}
 
@@ -137,8 +137,4 @@ h3{
 .button:hover span:after {
   opacity: 1;
   right: 0;
-}
-h3{
-  color: white;
-  text-shadow: 1.2px 1.2px 1.2px coral;
 }

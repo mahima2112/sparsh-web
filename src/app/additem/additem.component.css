@@ -72,8 +72,8 @@ table {
   padding: 8px;
 }
 
-#items tr:nth-child(even){background-color: #f2f2f2;}
-#items tr:nth-child(odd){background-color: #f2f2f2;}
+#items tr:nth-child(even){background-color: #C6E2FF;}
+#items tr:nth-child(odd){background-color: #C6E2FF;}
 
 #items tr:hover {background-color: #ffffff;}
 
