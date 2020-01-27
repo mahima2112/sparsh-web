@@ -1,8 +1,8 @@
 <h1 class='title'>Sparsh Books</h1>
-<h2 (click) = "BackToHome()">
+<!-- <h2 (click) = "BackToHome()">
   Home
-</h2>
-
+</h2> -->
+ <button class="button" (click) = "BackToHome()"><span><b>Home </b></span></button>
 <!-- <div class="row">
   <div class="col">
     <div ngbDropdown class="d-inline-block">
@@ -86,14 +86,14 @@
 
 <div style="margin-top: 5%;">
 <span style="position: absolute; margin-top: 5%;width: 50%;">
-<div>Add New Item Here</div>
-
+<!-- <div>Add New Item Here</div> -->
+<div><h3> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ADD NEW ITEM HERE:</h3></div>
 <form [formGroup]="itemform" (ngSubmit)="insertItem(itemform.value)" style="margin-left: 10%;">
   <div class='infield'>
     <label for="item_name">
       <h5>Item Name:</h5> 
     </label>
-    <input id="item_name" type="text" formControlName="item_name" >
+    <input id="item_name" type="text" formControlName="item_name" style="margin-left: 8.5%;" size="20">
   </div>
   <!-- Convert it into a drop down -->
     <div class='infield'> 
@@ -101,7 +101,7 @@
         <h5>Item Type:</h5> 
       </label>
       <!-- <input id="item_type" type="text" formControlName="item_type"> -->
-      <select class="custom-select" formControlName="item_type">
+      <select class="custom-select" formControlName="item_type" style="margin-left: 10%;" >
         <option value="" disabled>Choose your type</option>
         <option>STATIONARY</option>
         <option>NOTEBOOK</option>
@@ -118,12 +118,13 @@
 
     <div class='infield' >
         <label for="publisher">
-          <h5>publisher:</h5> 
+          <h5>Publisher:</h5> 
         </label>
-        <input id="publisher" type="text" formControlName="publisher" >
+        <input id="publisher" type="text" formControlName="publisher" style="margin-left: 10%;" size="20">
     </div>
-  <button class="btn btn-info" type="submit">Add</button>
+  <!-- <button class="btn btn-info" type="submit">Add</button> -->
   <!-- <a href="#" class="btn btn-info" role="button">Add</a> -->
+  <button class="button" type="submit"><span><b>Add </b></span></button>
 </form>
 </span>
 
@@ -131,14 +132,14 @@
 margin-top: 5%;
 margin-left: 40%;
 width: 50%;">
-<div>Update Item Here</div>
+<div><h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; UPDATE ITEM HERE:</h3></div>
 
 <form [formGroup]="updateitemform" (ngSubmit)="insertItem(updateitemform.value)" style="margin-left: 10%;">
   <div class='infield'>
     <label for="item_name">
       <h5>Item Name:</h5> 
     </label>
-    <input id="item_name" type="text" formControlName="item_name" >
+    <input id="item_name" type="text" formControlName="item_name" style="margin-left: 8.5%;" size="20">
   </div>
   <!-- Convert it into a drop down -->
     <div class='infield'> 
@@ -146,7 +147,7 @@ width: 50%;">
         <h5>Item Type:</h5> 
       </label>
       <!-- <input id="item_type" type="text" formControlName="item_type"> -->
-      <select class="custom-select" formControlName="item_type">
+      <select class="custom-select" formControlName="item_type" style="margin-left: 10%;">
         <option value="" disabled>Choose your type</option>
         <option>STATIONARY</option>
         <option>NOTEBOOK</option>
@@ -163,11 +164,12 @@ width: 50%;">
 
     <div class='infield' >
         <label for="publisher">
-          <h5>publisher:</h5> 
+          <h5>Publisher:</h5> 
         </label>
-        <input id="publisher" type="text" formControlName="publisher" >
+        <input id="publisher" type="text" formControlName="publisher" style="margin-left: 10%;" size="20">
     </div>
-  <button class="btn btn-info" type="submit">Add</button>
+  <!-- <button class="btn btn-info" type="submit">Add</button> -->
+  <button class="button" type="submit"><span><b>Add </b></span></button>
   <!-- <a href="#" class="btn btn-info" role="button">Add</a> -->
 </form>
 </span>
