@@ -25,7 +25,8 @@ export class AddschoolComponent implements OnInit {
     });
   }
   ngOnInit() {
-    this.getSchools()
+     this.getSchools()
+    // this.Data = [{"school_id":"s_AC","school_name":"A B C","district":"Panipat","state":"haryana","address":"New Bazar Road"},{"school_id":"s_AS","school_name":"Ajay School","district":"Balasore","state":"Delhi","address":"Plot-771,Gram Sabha,Pooth Kalan"},{"school_id":"s_DS","school_name":"DAV model school","district":"Delhi","state":"delhi","address":"shalimar bagh"},{"school_id":"s_E","school_name":"emp1","district":"temp","state":"Delhi","address":"Plot-771,Gram Sabha,Pooth Kalan"},{"school_id":"s_M","school_name":"mp1","district":"temp","state":"Delhi","address":"Plot-771,Gram Sabha,Pooth Kalan"},{"school_id":"s_T","school_name":"temp","district":"temp","state":"temp","address":"temp"},{"school_id":"s_XZ","school_name":"x y z","district":"sonipat","state":"haryana","address":"New Bazar Road"}]
   }
   getSchools(){
 
@@ -59,4 +60,10 @@ export class AddschoolComponent implements OnInit {
       }
     })
   }
+  toSchoolPage(data){
+    let url = 'school/'+data
+    this.router.navigateByUrl(url);
+    }
+    
 }
+

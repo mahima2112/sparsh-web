@@ -13,6 +13,7 @@ import { AdditemComponent } from './additem/additem.component';
 import { SignupComponent } from './signup/signup.component';
 import { SchoolComponent } from './school/school.component';
 import { MatMenuModule} from '@angular/material';
+// import { SchoolsComponent } from './school/schools.component';
 
 const appRoutes: Routes = [
   // { path: 'home', component: HomeComponent2, data: { breadcrumb: 'Home' } },
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
   // { path: 'state/:id/:name', component: StateOverviewComponent},
   { path: 'addSchool', component: AddschoolComponent},
   { path: 'home', component: HomeComponent},
+  { path: 'school/:id', component: SchoolComponent},
   { path: 'signup', component: SignupComponent},
   {
     path: '',
@@ -39,6 +41,7 @@ const appRoutes: Routes = [
     AdditemComponent,
     SignupComponent,
     SchoolComponent
+    // SchoolsComponent
   ],
   imports: [
     BrowserModule,
